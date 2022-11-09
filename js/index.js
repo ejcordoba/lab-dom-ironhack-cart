@@ -44,6 +44,7 @@ function createProduct() {
   const productPriceValue = createProductRow.querySelector('input[type=number]').value;
   const tableRef = document.getElementById('cart').getElementsByTagName('tbody')[0];
   const rowRef = tableRef.insertRow(-1);
+  rowRef.classList.add("product");
   const nameCell = rowRef.insertCell(0);
   nameCell.classList.add("name");
   const priceCell = rowRef.insertCell(1);
